@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      a {
+        transition: color 0.3s ease-in-out;
+      }
+      a:hover {
+        color: #ca9c3e;
+      }
+    </style>
+  </head>
+  <body class="bg-pink-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-[#ebcc77] shadow fixed w-full z-10 top-0 left-0">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a class="text-xl font-bold text-gray-800 hover:text-pink-500" href="#home">
+           Portfolio
+        </a>
+        <div class="flex space-x-6">
+          <a href="#home" class="text-gray-800 hover:text-[#fffefc]">Home</a>
+          <a href="#about" class="text-gray-800 hover:text-[#fffefc]">About</a>
+          <a href="#projects" class="text-gray-800 hover:text-[#fffefc]">Projects</a>
+          <a href="#contact" class="text-gray-800 hover:text-[#fffefc]">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="bg-[] py-32 text-center" id="home">
+      <div class="container mx-auto px-6">
+        <img alt="A professional portrait of Friska, a web developer" class="mx-auto rounded-full w-48 h-48 object-cover shadow-xl" src="fr.jpg"/>
+        <h1 class="text-5xl font-bold text-gray-800 mt-6">Friska Maysela</h1>
+        <p class="text-xl text-gray-700 mt-2">Programmer</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-[#eed387] py-20" id="about">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gray-800 text-center">Profil</h2>
+        <p class="text-gray-700 mt-6 text-center max-w-3xl mx-auto">
+            Saya adalah lulusan SMKN 71 JAKARTA Tahun Ajaran 2023 s.d. 2026
+Jurusan Rekayasa Perangkat Lunak, Saya memiliki ketertarikan pada sistem perangkat lunak dan desain web. Saya memiliki kemampuan komunikasi yang baik,mampu menyampaikan informasi secara jelas, serta dapat menyelesaikan masalah dengan sikap yang proaktif dan inovatif.
+        </p>
+        <div class="text-center mt-8">
+          <button class="bg-[#9c8850] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#9c8850] transition duration-300" id="skillsButton">
+            Skills
+          </button>
+        </div>
+
+        <!-- Skills Popup -->
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden" id="skillsPopup">
+          <div class="bg-white p-8 rounded-lg max-w-sm">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Skills</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>Web Design</li>
+              <li>UI Figma</li>
+              <li>Data Analysis</li>
+              <li>Microsoft Office</li>
+            </ul>
+            <button class="mt-6 bg-[#ebcc77] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#9c8850] transition duration-300" id="closeSkillsButton">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-pink-50 py-20" id="projects">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Projects</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-[#eed387] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+              <img alt="UI Figma Kasir" class="rounded-lg w-full h-auto object-contain mb-4" src="sekolah.png"/>
+              <h3 class="text-xl font-semibold text-gray-900">Website Sekolah</h3>
+              <p class="text-gray-700 mt-2">Pada projek ini saya membuat halaman website sekolah SMKN 71 JAKARTA,yang meliputi data-data pihak sekolah seperti kepala sekolah,wakil kepala sekolah ,dan guru.</p>
+            </div>
+            <div class="bg-[#eed387] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+              <img alt="UI Figma Kasir" class="rounded-lg w-full h-auto object-contain mb-4" src="apotik.png"/>
+              <h3 class="text-xl font-semibold text-gray-900">Website Apotik</h3>
+              <p class="text-gray-700 mt-2">Pada projek ini saya membuat halaman website sebuah e-commerce Apotik SMKN 71 JAKARTA,dengan fitur yang lengkap,ada beberapa kategori obat-obatan dan lain sebagainya.</p>
+            </div>
+            <div class="bg-[#eed387] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+              <img alt="UI Figma Kasir" class="rounded-lg w-full h-auto object-contain mb-4" src="undangan.jpg"/>
+
+              <h3 class="text-xl font-semibold text-gray-900">Website Undangan Digital</h3>
+              <p class="text-gray-700 mt-2">Pada projek ini saya membuat undangan digital ,ada beberapa macam undangan yang kalian bisa buat ,undangan pameran, undangan rapat, dan lain sebagainya.</p>
+            </div>
+            <div class="bg-[#eed387] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        
+              <img alt="UI Figma Kasir" class="rounded-lg w-full h-auto object-contain mb-4" src="NetBeans.jpg"/>
+              <h3 class="text-xl font-semibold text-gray-900">NetBeans</h3>
+              <p class="text-gray-700 mt-2">Pada projek ini saya membuat undangan digital ,ada beberapa macam undangan yang kalian bisa buat ,undangan pameran, undangan rapat, dan lain sebagainya.</p>
+            </div>
+            <div class="bg-[#eed387] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+              
+              <img alt="UI Figma Kasir" class="rounded-lg w-full h-auto object-contain mb-4" src="flutter.jpg"/>
+              <h3 class="text-xl font-semibold text-gray-900">Flutter</h3>
+              <p class="text-gray-700 mt-2">Pada projek ini saya membuat halaman input nilai siswa, dengan fitur create ,update dan delete.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Contact Section -->
+        <section class="bg-[#eed387] py-20" id="contact">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gray-800 text-center">Contact Me</h2>
+        <div class="mt-8 max-w-lg mx-auto">
+          <div class="mb-6 flex items-center text-xl text-gray-700">
+            <i class="fas fa-phone-alt mr-4"></i>
+            <span>082114265676</span>
+          </div>
+          <div class="mb-6 flex items-center text-xl text-gray-700">
+            <i class="fas fa-envelope mr-4"></i>
+            <span>mayselafriskaa@gmail.com</span>
+          </div>
+          <div class="mb-6 flex items-center text-xl text-gray-700">
+            <i class="fas fa-map-marker-alt mr-4"></i>
+            <span>Pulogebang,Gg.Hj.Marzuki Rt04/06 No.70 Jakarta Timur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-100 py-8">
+      <div class="container mx-auto text-center">
+        <p class="text-gray-700">© 2025 Friska Maysela. All rights reserved.</p>
+        <div class="mt-6 space-x-4">
+          <a href="#" class="text-gray-700 hover:text-pink-500"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-700 hover:text-pink-500"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-700 hover:text-pink-500"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/friska21624" class="text-gray-700 hover:text-pink-500"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('skillsButton').addEventListener('click', function() {
+        document.getElementById('skillsPopup').classList.remove('hidden');
+      });
+      document.getElementById('closeSkillsButton').addEventListener('click', function() {
+        document.getElementById('skillsPopup').classList.add('hidden');
+      });
+    </script>
+  </body>
+</html>
